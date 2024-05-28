@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Postres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Recetas de Postres</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>s
+</header>
+
+<main>
+    <div class="recetas">
+        <div class="receta">
+            <h2>Tarta de Manzana</h2>
+            <img src="manzana,jpg.jpg" alt="Imagen de Tarta de Manzana">
+            <button onclick="mostrarReceta(1)">Ver Receta</button>
+            <div id="recetaPopup1" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="cerrarReceta(1)">&times;</span>
+                    <h2>Tarta de Manzana</h2>
+                    <img src="tartademanzana.jpg" alt="Imagen de Tarta de Manzana" class="left">
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <li>4 manzanas</li>
+                        <li>250g de masa de hojaldre</li>
+                        <li>50g de azúcar</li>
+                        <li>Canela al gusto</li>
+                    </ul>
+                    <p>Preparación:</p>
+                    <ol>
+                        <li>Pelar y cortar las manzanas en rodajas.</li>
+                        <li>Extender la masa de hojaldre en un molde para tarta.</li>
+                        <li>Colocar las rodajas de manzana sobre la masa.</li>
+                        <li>Espolvorear con azúcar y canela.</li>
+                        <li>Hornear a 180°C durante 30 minutos.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="receta">
+            <h2>Cupcakes de Chocolate</h2>
+            <img src="chocolate2.jpg" alt="Imagen de Cupcakes de Chocolate">
+            <button onclick="mostrarReceta(2)">Ver Receta</button>
+            <div id="recetaPopup2" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="cerrarReceta(2)">&times;</span>
+                    <h2>Cupcakes de Chocolate</h2>
+                    <img src="chocolate.jpg" alt="Imagen de Cupcakes de Chocolate" class="left">
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <li>150g de harina</li>
+                        <li>150g de azúcar</li>
+                        <li>150g de mantequilla</li>
+                        <li>3 huevos</li>
+                        <li>100g de chocolate negro</li>
+                        <li>1 cucharadita de esencia de vainilla</li>
+                    </ul>
+                    <p>Preparación:</p>
+                    <ol>
+                        <li>Derretir el chocolate y la mantequilla juntos.</li>
+                        <li>Batir los huevos con el azúcar hasta que estén espumosos.</li>
+                        <li>Añadir la mezcla de chocolate y mantequilla derretidos a la mezcla de huevos y azúcar.</li>
+                        <li>Agregar la harina y la esencia de vainilla.</li>
+                        <li>Verter la mezcla en moldes para cupcakes y hornear a 180°C durante 20-25 minutos.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- Agrega más recetas aquí -->
+        <div class="receta">
+            <h2>Cheesecake de Fresa</h2>
+            <img src="fresa.jpg" alt="Imagen de Cheesecake de Fresa">
+            <button onclick="mostrarReceta(3)">Ver Receta</button>
+            <div id="recetaPopup3" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="cerrarReceta(3)">&times;</span>
+                    <h2>Cheesecake de Fresa</h2>
+                    <img src="fresa2.jpg" alt="Imagen de Cheesecake de Fresa" class="left">
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <li>200g de galletas</li>
+                        <li>100g de mantequilla</li>
+                        <li>400g de queso crema</li>
+                        <li>200g de fresas</li>
+                        <li>100g de azúcar</li>
+                        <li>1 cucharadita de esencia de vainilla</li>
+                    </ul>
+                    <p>Preparación:</p>
+                    <ol>
+                        <li>Triturar las galletas y mezclar con la mantequilla derretida.</li>
+                        <li>Presionar la mezcla de galletas en la base de un molde.</li>
+                        <li>Mezclar el queso crema con el azúcar y la esencia de vainilla.</li>
+                        <li>Verter la mezcla sobre la base de galletas.</li>
+                        <li>Decorar con fresas y refrigerar por al menos 4 horas.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
